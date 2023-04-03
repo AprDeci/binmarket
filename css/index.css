@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #fffffff9;
+}
+.headertop{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    background-color: #f2f2f2;
+    justify-content: space-between;
+    padding: 3px 0px;
+    padding-left: 5px;
+    padding-right: 0px;
+    color: black;
+    height:25px;
+
+}
+.headertop a{
+    text-decoration: none;
+    color: black;
+}
+.headertop a img{
+    height: 20px;
+    vertical-align: middle;
+}
+.topinfo{
+    
+    display: inherit;
+}
+.topinfo a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+.topinfo p{
+    margin-left: 15px;
+}
+.headerinfo{
+    position: absolute;
+    top: 30px;
+    padding: 0 20px;
+    display: flex;
+   
+}
+.headerinfo img{
+    height: 100px;
+}
+.box{
+    position: relative;
+    left: 300px;
+    width:505px;
+    height:40px;
+    border:2px solid rgb(29, 156, 65);
+    margin:auto;
+}
+.input{
+    padding-left: 5px;
+    float:left;
+    width:400px;/*宽400*/
+    height:38px;/*高38（因为文本框内外边框要占用1像素所以总体高度减2，其他盒子同理）*/
+    outline:none;
+    border:none;/*取消文本框内外边框*/
+}
+.button{
+	float:left;
+	width:100px;
+	height:40px;
+	color:white;
+	background-color:rgb(29, 156, 65);/*将按钮背景设置为红色，字体设置为白*/
+	border:none;
+	outline:none;/*取消边框和外边框将按钮边框去掉*/
+    cursor: pointer;
+}
+.button:hover{
+    background-color:rgb(23, 122, 51)
+}   
+.bala1{
+    position: relative;
+    top: 75px;
+    right: 200px;
+    font-size: small;
+    text-decoration: none;
+}
+.bala1 a{
+    text-decoration: none;
+    color: black;
+}
+#gouwuche{
+    background-color: #f3f3f3;
+    height: 40px;
+    width: 120px;
+    line-height: 40px;
+    text-align: center;
+    border: solid 2px gray;
+    position: absolute;
+    top: 28px;
+    right: -300px;
+    text-decoration: none;
+    color: black;
+}
+#gouwuche:hover{
+    background-color: #949494;
+}
+.lead{
+    z-index: 99;
+    height: 30px;
+    display: flex;
+    position: absolute;
+    top: 140px;
+    font-weight: bolder;
+    font-size: large;
+    justify-content: space-around;
+}
+.lead a{
+    margin-left: 20px;
+    text-decoration: none;
+}
+.noim a{
+    color: black;
+}
+.noim a:hover{
+    color: green;
+}
+.maain{
+position:absolute;
+top: 170px;
+height: 463px;
+
+}
+.maain ul{
+    
+    float: left;
+    background-color: rgba(119, 207, 68, 0.8);
+    position: relative;
+    left: 20px;
+    list-style: none;
+    width: 200px;
+    z-index:99;
+}
+.maain ul li{
+    
+    cursor: pointer;
+    padding: 8px 20px;
+    border-bottom: 1px solid white;
+}
+.maain ul li:hover{
+    background-color: #949494;
+}
+.maain ul li span{
+    display: block;
+    color: white;
+    font-size: large;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+.maain ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: small;
+    font-weight: 500;
+}
+.maain img{
+    float: right;
+    width: 100vw;
+    height: 463px;
+    position: relative;
+    bottom: 462px;
+}
+#section div{
+    background-color: #f5f5f5;
+}
+.news{
+    display: flex;
+    position: absolute;
+    top: 640px;
+    margin: 20px 20px;
+}
+.news2{
+    margin-right: 30px;
+}
+.news3{
+    box-shadow: 3px 1px 10px black;
+    width: 250px;
+    border-top: 2px solid rgb(23, 240, 23);
+
+    height: 247px;
+    font-weight: 400;
+    padding: 20px 0;
+    padding-bottom: 5px;
+    padding-left: 40px;
+}
+.new3 ul{
+    list-style: circle;
+}
+.news3 ul li{
+    font-weight: 200;
+    padding:10px 10px ;
+}
+.news3 ul li a{
+    text-decoration: none;
+    color: black;
+}
+.news3 ul li a:hover{
+    color: rgb(23, 240, 23,0.8);
+}
+.news3 div:nth-of-type(1){
+    width: 250px;
+    border-bottom: 2px  gray;
+    margin-bottom: 10px;
+}
+.news3 div:nth-of-type(1) span{
+    font-size: large;
+}
+.hotname{
+    height: 30px;
+    padding:20px;
+    padding-bottom: 0;
+    padding-right: 0;
+    width: 100vw;
+    position: absolute;
+    top: 950px;
+    font-weight: bold;
+    font-size: larger;
+    line-height: 30px;
+}
+.hot{
+    padding-left: 20px;
+    position: absolute;
+    top: 1000px;
+}
+.ad_qing div:hover{
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.307);
+}
