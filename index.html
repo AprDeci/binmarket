@@ -88,7 +88,8 @@
                 </li>
             </ul>
 
-                <li><img style="width:calc(100vw - 30px)" src="./img/banner3.png"> </li>       
+                <div id="banner"><img style="width:calc(100vw - 20px)" src="./img/banner2.png"> </div> 
+                <div id="changeleft" style="z-index: 10000; position: relative;right: 10vw; display: none;"><img src="./img/箭头.png" alt=""></div>      
         </div>
     </main>
     <div id="section">
@@ -123,5 +124,23 @@
         </div>
     </div>
    
+    <script>
+        let img = document.getElementById("banner")
+        let banner = 'banner1'
+        let index  = 1
+        function show(){
+            img.src = './img/'+banner+'.png'
+        }
+        function change(){
+            setInterval(function(){
+                index %= 2;
+                // banner = banner+index;
+                console.log('./img/'+banner+'.png')
+                show();
+                index++
+            },1000)
+        }
+        change()
+    </script>
 </body>
 </html>
