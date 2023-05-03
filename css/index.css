@@ -1,10 +1,9 @@
 *{
     padding: 0;
     margin: 0;
+    /* border: 1px solid red; */
 }
 #header{
-    padding: 0 50px;
-
     overflow: hidden;
     height: 135px;
 }
@@ -13,7 +12,7 @@
     display: flex;
     position: relative;
     top: 0;
-    background-color: #ffffff;
+    background-color: #d9d9d9;
     justify-content: space-between;
     padding: 3px 0px;
     color: black;
@@ -30,7 +29,6 @@
     vertical-align: middle;
 }
 .topinfo{
-    
     display: inherit;
 }
 .topinfo a{
@@ -41,6 +39,7 @@
     margin-left: 15px;
 }
 .headerinfo{
+    padding-left: 50px;
     position: absolute;
     top: 30px;
 
@@ -184,7 +183,8 @@ height: 463px;
     justify-content: center;
     align-items: center;
     position: relative;
-    
+    width: 100%;
+    margin: 0px,20px;
 }
 .news2{
     margin-right: 30px;
@@ -193,7 +193,6 @@ height: 463px;
     box-shadow: 3px 1px 10px black;
     width: 250px;
     border-top: 2px solid rgb(23, 240, 23);
-
     height: 247px;
     font-weight: 400;
     padding: 20px 0;
@@ -241,5 +240,5 @@ height: 463px;
     top: 0;
 }
 .ad_qing div:hover{
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.307);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.307);
 }
