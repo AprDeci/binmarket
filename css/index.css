@@ -89,6 +89,9 @@
     text-decoration: none;
     color: black;
 }
+.bala1 a:hover{
+	color: green;
+}
 #gouwuche{
     background-color: #f3f3f3;
     height: 40px;
@@ -119,8 +122,13 @@
     margin-left: 20px;
     text-decoration: none;
 }
+.noim{
+
+	
+}
 .noim a{
     color: black;
+	
 }
 .noim a:hover{
     color: green;
@@ -186,8 +194,31 @@ height: 463px;
     opacity: 0;
     transition: 0.3s;
 }
+#right p{
+	    position: relative;
+	    bottom: 932px;
+		left:2px;
+	    font-size: 40px;
+	    color: white;
+}
 .maain:hover #right{
     opacity: 1;
+}
+#cirs{
+	position: relative;
+	top: 400px;
+	left: 600px;
+	display: flex;
+}
+.cir{
+	margin-left: 2px;
+	width: 15px;
+	height: 15px;
+	background: rgba(119, 207, 68, 0.8);
+	border-radius: 50%;
+}
+.cir.active{
+	background: white;
 }
 #section{
     position: relative;
@@ -204,9 +235,11 @@ height: 463px;
     position: relative;
     width: 100%;
     margin: 0px,20px;
+	cursor: pointer;
 }
 .news2{
     margin-right: 30px;
+	cursor: pointer;
 }
 .news3{
     box-shadow: 3px 1px 10px black;
@@ -257,7 +290,12 @@ height: 463px;
 .hot{
     position: relative;
     top: 0;
+	
 }
 .ad_qing div:hover{
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.307);
+}
+.ad_qinglist{
+	border: 1px  rgba(0, 0, 0, 0.307);
+	border-style: dashed;
 }
