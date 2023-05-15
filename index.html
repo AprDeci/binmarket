@@ -13,7 +13,7 @@
         <div class="headertop">
             <div>
         <a href="#"><img src="./img/shouye.png" alt="">返回首页</a>
-        <a href="#"><img src="./img/shoucang.png" alt="">收藏本站</a>
+        <a href="#"><img src="./img/shoucang.png" alt="" onclick="Bookmark()">收藏本站</a>
     </div>
     <div class="topinfo">
         <p>Hi,欢迎来看宗斌吃饭!</p>
@@ -90,7 +90,11 @@
 
                 <div id="banner">
                     <img class="banner" style="width:calc(100vw - 20px)" src="./img/banner2.png">
-                    <div id="right">></div>
+                    <div id="right"><p>></p></div>
+					<div id="cirs">
+						<div class="cir"></div>
+						<div class="cir"></div>
+					</div>
                 </div> 
 <!--  -->
         </div>
@@ -132,17 +136,52 @@
         var baner = document.getElementById("banner")
         var bannersrc = 'banner1'
         var right = document.getElementById("right")
-        var index  = 1
+        var index= 1
+		var indexcir = 0
+		var crs = document.getElementsByClassName("cir")
+		 function fresh(){
+			console.log("fresh")
+			for(var i = 0;i<crs.length;i++){
+				crs[i].className="cir"
+			}
+		}
         function show(){
+			fresh();
             banner[0].src="./img/banner"+index+".png"
-            if(index>1){
+			crs[indexcir].className="cir active"
+			console.log(index)
+            if(index>1&&indexcir>0){
                 index = 1;
+				indexcir=0;
             }else{
                 index++;
+				indexcir++
             }
         }
         right.onclick=show
-        
+        var timer = setInterval(show,4000)
+		function Bookmark(){
+			if (document.all && !window.opera) {
+				if (typeof window.external == "object") {
+					window.external.AddFavorite (document.location, document.title); return false;
+			} else return false;}
+		
+			else {
+				var ua = navigator.userAgent.toLowerCase();
+				var isWebkit = (ua.indexOf('webkit') != - 1);
+				var isMac = (ua.indexOf('mac') != - 1);
+				if (isWebkit || isMac) {
+		            alert('按下组合键: "' + (isMac ? 'Command/Cmd' : 'CTRL') + ' + D" 将本站添加到书签中');
+		            return false;
+				}
+				else {
+					x.href=document.location;
+					x.title=document.title;
+					x.rel = "sidebar";
+					return true;
+				}
+			}
+		}
     </script>
 </body>
 </html>
